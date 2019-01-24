@@ -1,0 +1,45 @@
+.jumbotron-fluid {
+    font-weight: bolder;
+    font-family: 'Anton', sans-serif;
+    color: blue;
+}
+
+.train {
+    font-size: 100px;
+}
+
+.input-header {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.input-container {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+.form-container {
+    padding: 5px;
+}
+
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+.table-header {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}

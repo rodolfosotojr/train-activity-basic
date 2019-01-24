@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="train">TRAIN SCHEDULE</h1>
+        </div>
+    </div>
+
+    <div class="table-container">
+        <h1 class="table-header">Current Train Schedule</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="trainName" scope="row">Trenton Express</th>
+                    <td>Trenton</td>
+                    <td>25</td>
+                    <td>05:35 PM</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Oregon Trail</th>
+                    <td>Salem, Oregon</td>
+                    <td>3600</td>
+                    <td>01:39 PM</td>
+                    <td>1154</td>
+                </tr>
+                <tr>
+                    <th scope="row">Midnight Carriage</th>
+                    <td>Philadelphia</td>
+                    <td>15</td>
+                    <td>05:35 PM</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="input-container">
+
+        <h1 class=input-header>Add Train</h1>
+        <form class="form-container">
+            <div class="form-group">
+                <label for="forTrainName">Train Name</label>
+                <input type="text" class="form-control" id="formTrainName" placeholder="Your Train Express">
+            </div>
+            <div class="form-group">
+                <label for="formDestination">Destination</label>
+                <input type="text" class="form-control" id="formDestination" placeholder="Where To?">
+            </div>
+            <div class="form-group">
+                <label for="formTrainTime">First Train Time (HH:MM -military time)</label>
+                <input type="text" class="form-control" id="formTrainTime" placeholder="00:00">
+            </div>
+            <div class="form-group">
+                <label for="formFrequency">Frequency</label>
+                <input type="text" class="form-control" id="formFrequency" placeholder="Time In Minutes">
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
